@@ -1,0 +1,20 @@
+#include <stdio.h>
+#include <stdbool.h>
+#include <stdlib.h>
+int answer(int english int korean)
+ {
+    int answer = 0;
+    int result = 210 - (english + korean);
+    if(result > 100)
+        answer = -1;
+    else
+        answer = result;
+    return answer;
+}
+int main()
+ {
+    int korean = 50;
+    int english = 60;
+    int result = answer(english, korean);
+    printf("answer %d .\n", result);
+}
